@@ -1,0 +1,28 @@
+should_continue = True
+while should_continue:
+ alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+            'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+ direction = input("Encode or Decode")
+ text = input("Enter the text :").lower()
+ shift = int(input("Enter the shift number:\n"))
+# this help to reduce shift number
+ shift = shift%25
+
+ def ceaser(plain_text=text, shift_amount=shift):
+    overall_text = ''
+    for letter in plain_text:
+        if letter in plain_text:
+            position = alphabet.index(letter)
+            if direction == "Encode":
+                new_position = position + shift_amount
+            elif direction == "Decode":
+                new_position = position - shift_amount
+            overall_text += alphabet[new_position]
+        else:
+            overall_text += letter
+    print(f"Your encoded text is {overall_text}")
+ ceaser()
+ result = input("Do you want to paly again yes/no")
+ if result == "no":
+     should_continue = False
+
