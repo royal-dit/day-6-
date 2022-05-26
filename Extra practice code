@@ -1,0 +1,26 @@
+##1.. paint area calculator  ##
+# import math
+#
+# height = int(input("Enter the hieght of your wall:\n"))
+# width = int(input("Enter the width of your wall:\n"))
+# coverage_per_can = 5
+# def area():
+#     total_can_req = math.ceil((height*width) / coverage_per_can)
+#     return total_can_req
+# callable_area = area()
+# print(f"Total number of  can req for your {height}*{width} sq feet wall is : {callable_area}")
+
+
+## 2.          prime number checker
+
+# prime_input = int(input("Enter the number:"))
+# def prime_checkr(num = prime_input):
+#      for i in range(2,prime_input-1):
+#          is_prime = True
+#          if  num%i == 0:
+#              is_prime=False
+#      if is_prime:
+#          print("The given number is prime")
+#      else:
+#          print("the Given number is not prime")
+# prime_checkr()
